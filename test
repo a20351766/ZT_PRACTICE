@@ -1,0 +1,5 @@
+mac系统如何显示和隐藏文件
+
+显示/隐藏Mac隐藏文件命令如下(注意其中的空格并且区分大小写)：
+显示Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool true隐藏Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles -bool false或者显示Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles YES隐藏Mac隐藏文件的命令：defaults write com.apple.finder AppleShowAllFiles NO输完单击Enter键，退出终端，重新启动Finder就可以了
+重启Finder：鼠标单击窗口左上角的苹果标志-->强制退出-->Finder-->重新启动打开终端,进到所在的目录,然后出入一下代码find . -name ".svn" | xargs rm -Rf
